@@ -1,18 +1,17 @@
 const int analogInPin1 = A0;  // アナログ入力ピン1
 const int analogInPin2 = A2;  // アナログ入力ピン2
-const int analogOutPin = 9; // アナログ出力ピン(LEDピン)
-int sensorValue1 = 0;        // センサ読み取り値1
-int sensorValue2 = 0;        // センサ読み取り値2
-int outputValue = 0;        // LED出力値
+const int analogOutPin = 9;   // アナログ出力ピン(LEDピン)
+int sensorValue1 = 0;         // センサ読み取り値1
+int sensorValue2 = 0;         // センサ読み取り値2
+int outputValue = 0;          // LED出力値
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);   // シリアル開始
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  if (Serial.available() > 0) {   // もし、データを受信していたら
+  // もし、データを受信していたら
+  if (Serial.available() > 0) {
     // バッファをクリアするため1バイト読み込み(読み込んだ値は使用しない)
     Serial.read();
     //センサ値読み取り
