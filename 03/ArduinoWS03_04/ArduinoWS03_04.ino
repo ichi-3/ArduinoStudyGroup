@@ -1,14 +1,24 @@
+
+/*
+ 第3回Arduino勉強会
+ 複数センサ（24ページ目）
+*/
+
+// 定数の宣言
 const int analogInPin1 = A0;  // アナログ入力ピン1
 const int analogInPin2 = A2;  // アナログ入力ピン2
 const int analogOutPin = 9;   // アナログ出力ピン(LEDピン)
+// 変数の宣言
 int sensorValue1 = 0;         // センサ読み取り値1
 int sensorValue2 = 0;         // センサ読み取り値2
 int outputValue = 0;          // LED出力値
 
+// 初期化
 void setup() {
   Serial.begin(9600);   // シリアル開始
 }
 
+// メイン処理の記述
 void loop() {
   // もし、データを受信していたら
   if (Serial.available() > 0) {

@@ -1,9 +1,15 @@
 
+/*
+ 第3回Arduino勉強会
+ シリアルモニタから送信（6ページ目）
+*/
+
 // LEDに使うデジタルピンの番号の定義
 const int ledPin01 = 9;
 // シリアルで読み取った文字列を格納する変数
 char received;
 
+// 初期化
 void setup() {
     // シリアル通信の開始
     Serial.begin(9600);
@@ -11,6 +17,7 @@ void setup() {
     pinMode(ledPin01, OUTPUT);
 }
 
+// メイン処理の記述
 void loop() {
     // 条件分岐：もしも、シリアルに何か届いていたら
     if (Serial.available() > 0) {
