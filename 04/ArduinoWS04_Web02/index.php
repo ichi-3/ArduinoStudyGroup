@@ -60,7 +60,7 @@
 		})
 		.text(function(d)
 		{
-			return d
+			return d/10 + "℃";
 		});
 
 		$('#graph')
