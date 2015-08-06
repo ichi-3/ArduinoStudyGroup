@@ -27,3 +27,9 @@ div#main
 	margin-right  : auto;
 	margin-left   : auto;
 }
+
+text.lbl
+{
+	color     : #fff;
+	font-size : 9px;
+}

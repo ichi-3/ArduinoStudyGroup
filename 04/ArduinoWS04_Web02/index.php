@@ -25,12 +25,14 @@
 
 		var bar_height = 20;
 		var bar_interval = 5;
+		var lbl_size = 9;
 
-		d3.select('#graph')
+		var graph = d3.select('#graph')
 		.selectAll('rect')
 		.data(dataSet)
-		.enter()
-		.append('rect')
+		.enter();
+
+		graph.append('rect')
 		.attr('x', 0)
 		.attr('y', function(d, i)
 		{
@@ -45,7 +47,24 @@
 			return d + "px";
 		});
 
-		$('#graph').css('height', dataSet.length * (bar_height + bar_interval));
+		graph.append('text')
+		.attr('class', 'lbl')
+		.attr('fill', 'white')
+		.attr('dx', function(d, i)
+		{
+			return 0;
+		})
+		.attr('dy', function(d, i)
+		{
+			return (i * (bar_height + bar_interval)) + lbl_size + lbl_size/2;
+		})
+		.text(function(d)
+		{
+			return d
+		});
+
+		$('#graph')
+		.css('height', dataSet.length * (bar_height + bar_interval));
 
 		/*---------------------------------------------------------
 		 * ajaxを利用してJSONデータを取得する
