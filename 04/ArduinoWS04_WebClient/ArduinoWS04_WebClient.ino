@@ -6,6 +6,7 @@
 
 #include <SPI.h>            // イーサネットシールドはSPIでArduinoと通信するのでSPI用ヘッダファイルを読み込む
 #include <Ethernet.h>       // イーサネットを使用するためのヘッダファイル読み込み
+//#include <Ethernet2.h>       // Ethernetシールドv2の場合はこちらを使う
 
 // MACアドレスの指定（各自の環境に併せて書き換えます）
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };

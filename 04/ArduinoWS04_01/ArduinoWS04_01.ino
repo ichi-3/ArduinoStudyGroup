@@ -6,6 +6,7 @@
 
 #include <SPI.h>
 #include <Ethernet.h>
+//#include <Ethernet2.h>       // Ethernetシールドv2の場合はこちらを使う
 
 // 定数の宣言
 const int analogInPin = A0;    // アナログ入力ピン

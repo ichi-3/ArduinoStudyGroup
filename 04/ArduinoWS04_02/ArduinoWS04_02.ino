@@ -6,6 +6,7 @@
 
 #include <SPI.h>            // イーサネットシールドはSPIでArduinoと通信するのでSPI用ヘッダファイルを読み込む
 #include <Ethernet.h>       // イーサネットを使用するためのヘッダファイル読み込み
+//#include <Ethernet2.h>       // Ethernetシールドv2の場合はこちらを使う
 
 // 定数の宣言
 const int analogInPin = A0;    // アナログ入力ピン
