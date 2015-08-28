@@ -10,7 +10,7 @@ class DB
 	private $_db;
 	private $_is_init_db;
 
-	private $_database_address   = "localhost:8888";			// データベースアドレス
+	private $_database_address   = "localhost:8889";			// データベースアドレス
 	private $_database_name      = "arduino_ws0401";			// データベース名
 	private $_database_user_name = "root";						// データベースユーザ名
 	private $_database_password  = "root";						// データベースパスワード
