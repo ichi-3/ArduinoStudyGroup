@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: 2015 年 8 月 04 日 17:45
+-- Generation Time: 2015 年 8 月 29 日 12:39
 -- サーバのバージョン： 5.5.38
 -- PHP Version: 5.5.17
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `arduino_ws0402`
 --
-CREATE DATABASE IF NOT EXISTS `arduino_ws0402` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `arduino_ws0402`;
 
 -- --------------------------------------------------------
 
@@ -29,7 +27,7 @@ USE `arduino_ws0402`;
 --
 
 CREATE TABLE `SeatTemps` (
-  `seattemps_index` int(11) NOT NULL,
+`seattemps_index` int(11) NOT NULL,
   `seattemps_seatid` int(11) NOT NULL,
   `seattemps_temp` float NOT NULL,
   `seattemps_date` date NOT NULL
@@ -45,6 +43,15 @@ CREATE TABLE `SeatTemps` (
 ALTER TABLE `SeatTemps`
  ADD PRIMARY KEY (`seattemps_index`);
 
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `SeatTemps`
+--
+ALTER TABLE `SeatTemps`
+MODIFY `seattemps_index` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
