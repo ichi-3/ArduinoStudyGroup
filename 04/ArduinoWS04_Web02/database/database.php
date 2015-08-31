@@ -28,7 +28,7 @@ class DB
 	------------------------------------------------------------------------------*/
 	public function setupDB()
 	{
-		if (!$_is_init_db)
+		if (!$this->_is_init_db)
 		{
 			// MySQLに接続する
 			$this->_db = mysql_connect($this->_database_address, $this->_database_user_name, $this->_database_password);		
@@ -39,7 +39,7 @@ class DB
 			
 			$this->executeQuery("SET NAMES UTF8");
 
-			$_is_init_db = true;
+			$this->_is_init_db = true;
 		}
 	}
 
