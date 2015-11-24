@@ -73,7 +73,7 @@ void loop() {
   Serial.print(temp01);
   
   //読み取ったリューム抵抗の値から色相を計算
-  int h = map(temp01, 0, 1023, 360);
+  int h = map(temp01, 0, 1024, 0, 360);
   //デバッグ用にPCへシリアルで送信  
   Serial.print(" _ h: ");
   Serial.print(h);
