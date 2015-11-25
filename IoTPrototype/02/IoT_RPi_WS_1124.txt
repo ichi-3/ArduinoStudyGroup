@@ -1,0 +1,47 @@
+sudo raspi-config
+→expand filesystem
+	SDカードの容量を全て使う設定
+
+→Internationalization Ssettings
+	時刻、キーボード設定
+	→Change TimeZone
+		時間の設定
+	→Change Keyboard Layout
+		→Generic 105 Keyboard
+			→Other
+				→Japanese
+					→Japanese
+						→The default for the keyboard layout
+							→No Compose Key
+								→No!
+			
+		
+
+パッケージ管理システム
+	簡単にソフトウェアを入れられる仕組み
+	Debian	apt		→Raspbian
+	Redhat	yum	
+			Fedora	→Pidora
+
+	BSD	port
+
+ソフトウェア・アップデート
+カタログ＝ソフトウェアの情報をアップデートする
+	apt-get update
+ソフトウェア一括アップデート
+	apt-get upgrade
+
+ソフトウェア検索
+	apt-cache search xxxxxxxx
+	apt-cache search firefox
+	apt-cache search java
+
+ソフトウェアのインストール
+	apt-get install apache←正式名称(Ver.番号やら開発版やら)or通称
+	
+RPiのインストール
+http://www.lifehacker.jp/2013/02/130226raspberry_pi_guide.html
+VNCサーバ
+http://yamaryu0508.hatenablog.com/entry/2014/08/16/202441
+Twitter API
+https://dev.twitter.com/oauth/tools/signature-generator/9133133
