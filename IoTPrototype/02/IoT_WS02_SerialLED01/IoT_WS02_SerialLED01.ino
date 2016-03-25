@@ -1,3 +1,9 @@
+
+/*
+ 第2回IoTプロトタイプ制作勉強会
+ フルカラーシリアルLED（8ページ目）
+*/
+
 #include <Adafruit_NeoPixel.h>  //テープLEDライブラリのAdafruit_NeoPixelの読み込み
 #define LED_NUM 5 
 #define TAPE_CONTROL 6
